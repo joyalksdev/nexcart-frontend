@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.manrope {
+    font-family: "Manrope", sans-serif;
+}
+
+:root {
+    --font-primary: "Inter", sans-serif;
+    --font-heading: "DM Sans", sans-serif;
+    --font-lead: "Manrope", sans-serif;
+    --primary: #4F46E5;
+    --primary-light: #6366F1;
+    --primary-glow: rgba(79, 70, 229, 0.12);
+    --text: #0F172A;
+    --text-muted: #64748B;
+    --text-light: #94A3B8;
+    --bg: #F8FAFC;
+    --bg-card: #FFFFFF;
+    --accent: #22C55E;
+    --accent-light: rgba(34, 197, 94, 0.1);
+    --border: rgba(15, 23, 42, 0.107);
+    --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
+    --shadow-md: 0 4px 24px rgba(15, 23, 42, 0.08), 0 2px 8px rgba(15, 23, 42, 0.04);
+    --shadow-hover: 0 20px 60px rgba(79, 70, 229, 0.12), 0 8px 24px rgba(15, 23, 42, 0.08);
+    --radius: 16px;
+    --radius-sm: 10px;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-weight: 600;
+}
+
+.hero-h1{
+    font-size: clamp(42px, 7vw, 76px);
+    font-weight: 800;
+    line-height: 1.07;
+    letter-spacing: -2px;
+    color: var(--text);
+    max-width: 800px;
+    margin: 0 auto 20px;
+    text-align: center;
+
+}
+
+.hero-h1 em::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+}
